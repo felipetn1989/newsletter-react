@@ -10,6 +10,8 @@ export default function MailForm({ setShowSuccess }) {
     const mailRegEx = /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/;
 
     setError(!mailRegEx.test(email))
+
+    setShowSuccess(mailRegEx.test(email))
 }
 
   function handleOnChange(e) {

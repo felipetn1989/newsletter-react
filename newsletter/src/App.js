@@ -4,13 +4,18 @@ import Main from "./components/pages/Main";
 import Success from "./components/pages/Success.";
 
 function App() {
-  const [success, setSuccess] = useState(null)
+  const [success, setSuccess] = useState(null);
 
   return (
     <div className="App">
-      <Header />
-      <Main />
-      {success && <Success setShowSuccess={setSuccess}/>}
+      {!success && (
+        <>
+          <Header />
+          <Main setShowSuccess={setSuccess} />
+        </>
+      )}
+
+      {success && <Success />}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import check from "../images/icon-list.svg";
 import MailForm from "../form/MailForm";
 
-export default function Main() {
+export default function Main({setShowSuccess}) {
   return (
     <main className="grid gap-3.5 text-[#242742] py-8 px-6">
       <h1 className="font-bold text-[2.375rem] tracking-wide">Stay updated!</h1>
@@ -22,7 +22,7 @@ export default function Main() {
           <span>And much more!</span>
         </li>
       </ul>
-      <MailForm />
+      <MailForm setShowSuccess={setShowSuccess} />
     </main>
   );
 }
