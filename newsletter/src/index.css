@@ -20,6 +20,7 @@
 }
 
 body {
+  background-color: #242742;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -27,4 +28,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (min-width:1024px) {
+  body,html {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 }

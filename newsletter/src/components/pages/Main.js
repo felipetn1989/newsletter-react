@@ -3,7 +3,7 @@ import MailForm from "../form/MailForm";
 
 export default function Main({setShowSuccess}) {
   return (
-    <main className="grid gap-3.5 text-[#242742] py-8 px-6">
+    <main className="grid gap-3.5 text-[#242742] py-8 px-6 bg-white lg:py-[6.375rem] lg:rounded-l-[2.0625rem]">
       <h1 className="font-bold text-[2.375rem] tracking-wide">Stay updated!</h1>
 
       <p>Join 60,000+ product managers receiving monthly updates on:</p>

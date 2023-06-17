@@ -7,7 +7,7 @@ function App() {
   const [success, setSuccess] = useState(null);
 
   return (
-    <div className="App">
+    <div className="App lg:flex lg:flex-row-reverse lg:items-center lg:max-w-[58rem] lg:m-auto">
       {!success && (
         <>
           <Header />
