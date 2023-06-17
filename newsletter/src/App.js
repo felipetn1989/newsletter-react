@@ -15,7 +15,7 @@ function App() {
         </>
       )}
 
-      {success && <Success />}
+      {success && <Success setShowSuccess={setSuccess} />}
     </div>
   );
 }
