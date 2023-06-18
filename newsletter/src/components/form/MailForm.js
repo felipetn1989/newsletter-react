@@ -42,7 +42,7 @@ export default function MailForm({ setShowSuccess }) {
         className={`border ${
           error ? "border-[#ff6257]" : "border-[#9294a0]"
         } rounded-lg py-[0.9375rem] pl-6 placeholder:text-[0.9375rem] placeholder:tracking-wide ${
-          error && "bg-[#ff62572c]" && "text-[#ff6257]"
+          error && "bg-[#ff62572c] text-[#ff6257]"
         } translate-y-[-0.375rem] lg:w-[23.4375rem] lg:py-3`}
         type="email"
         name="mailForm"
