@@ -3,12 +3,12 @@ import MailForm from "../form/MailForm";
 
 export default function Main({setShowSuccess}) {
   return (
-    <main className="grid gap-3.5 text-[#242742] py-8 px-6 bg-white lg:py-[6.375rem] lg:rounded-l-[2.0625rem]">
-      <h1 className="font-bold text-[2.375rem] tracking-wide">Stay updated!</h1>
+    <main className="grid gap-3.5 text-[#242742] py-8 px-6 bg-white lg:py-[5.3125rem] lg:h-[40.125rem] lg:rounded-l-[2.0625rem] lg:pl-16 lg:gap-0">
+      <h1 className="font-bold text-[2.375rem] tracking-wide lg:text-[3.375rem] lg:mb-[-0.5rem]">Stay updated!</h1>
 
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-      <ul className="grid gap-y-2.5 mt-2.5">
+      <ul className="grid gap-y-2.5 mt-2.5 lg:gap-y-1 lg:translate-y-[-0.625rem]">
         <li className="flex items-start gap-4">
           <img className="w-[1.375rem] translate-y-0.5" src={check} alt="" aria-hidden="true" />
           <span>Product discovery and building what matters</span>

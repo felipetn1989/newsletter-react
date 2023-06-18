@@ -21,7 +21,7 @@ export default function MailForm({ setShowSuccess }) {
   return (
     <form
       onSubmit={submitForm}
-      className="grid gap-2 mt-7"
+      className="grid gap-2 mt-7 lg:translate-y-[-0.4375rem]"
       action="#"
       noValidate
     >
@@ -43,7 +43,7 @@ export default function MailForm({ setShowSuccess }) {
           error ? "border-[#ff6257]" : "border-[#9294a0]"
         } rounded-lg py-[0.9375rem] pl-6 placeholder:text-[0.9375rem] placeholder:tracking-wide ${
           error && "bg-[#ff62572c]" && "text-[#ff6257]"
-        }`}
+        } translate-y-[-0.375rem] lg:w-[23.4375rem] lg:py-3`}
         type="email"
         name="mailForm"
         id="mailForm"
@@ -51,7 +51,7 @@ export default function MailForm({ setShowSuccess }) {
         onChange={handleOnChange}
       />
       <input
-        className="bg-[#242742] text-white font-bold mt-4 rounded-lg pt-[1.0625rem] pb-4 hover:bg-[#ff6257] hover:cursor-pointer"
+        className="bg-[#242742] text-white font-bold mt-4 rounded-lg pt-[1.0625rem] pb-4 hover:bg-[#ff6257] hover:cursor-pointer translate-y-[-0.375rem] lg:w-[23.4375rem] lg:py-3"
         type="submit"
         value="Subscribe to monthly newsletter"
       />
