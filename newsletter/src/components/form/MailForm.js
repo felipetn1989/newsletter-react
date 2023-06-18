@@ -9,10 +9,10 @@ export default function MailForm({ setShowSuccess }) {
 
     const mailRegEx = /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-    setError(!mailRegEx.test(email))
+    setError(!mailRegEx.test(email));
 
-    setShowSuccess(mailRegEx.test(email))
-}
+    setShowSuccess(mailRegEx.test(email));
+  }
 
   function handleOnChange(e) {
     setEmail(e.target.value);
@@ -33,7 +33,7 @@ export default function MailForm({ setShowSuccess }) {
           Email address
         </label>
         {error && (
-          <span className="text-[0.6875rem] font-bold tracking-wider text-[#ff6257]">
+          <span className="text-[0.6875rem] font-bold tracking-wider text-[#ff6257] lg:translate-x-[-1.25rem]">
             Valid email required
           </span>
         )}

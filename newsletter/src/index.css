@@ -29,13 +29,15 @@ code {
     monospace;
 }
 
-@media screen and (min-width:1024px) {
-  body,html {
-    height: 100vh;
+@media screen and (min-width: 1024px) {
+  body, html {
+    min-height: 100vh; 
+    /* using min height instead of height avoids the top part from disappearing when reducing the vertical size of the screen */
     background-color: #242742;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  
 }
+
